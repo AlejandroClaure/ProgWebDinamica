@@ -1,11 +1,14 @@
 <?php
-// Conexión a la base de datos
+// Datos de conexión
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "peliculasDB";
 
+// Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
@@ -23,37 +26,12 @@ $duracion = $_POST['duracion'];
 $restriccion = $_POST['restriccion'];
 $sinopsis = $_POST['sinopsis'];
 
-// Manejo de la imagen
-$imagen = $_FILES['imagen'];
-$rutaDestino = "../uploads/" . basename($imagen["name"]);
-$uploadOk = true;
-$tipoArchivo = strtolower(pathinfo($rutaDestino, PATHINFO_EXTENSION));
-
-// Validar tipo de archivo
-if (!in_array($tipoArchivo, ["jpg", "jpeg", "png", "gif"])) {
-    $uploadOk = false;
-    $mensajeError = "Solo se permiten imágenes JPG, JPEG, PNG o GIF.";
-}
-
-// Validar tamaño (máx 2MB)
-if ($imagen["size"] > 2 * 1024 * 1024) {
-    $uploadOk = false;
-    $mensajeError = "El archivo es demasiado grande. Máximo 2MB.";
-}
-
-// Intentar guardar la imagen si pasó validaciones
-if ($uploadOk && move_uploaded_file($imagen["tmp_name"], $rutaDestino)) {
-    $imagenGuardada = $rutaDestino;
-} else {
-    $imagenGuardada = null;
-}
-
 // Insertar en la base de datos
 $inserted = $conn->query("INSERT INTO peliculas (
-    titulo, actores, director, guion, produccion, anio, nacionalidad, genero, duracion, restriccion, sinopsis, imagen
-) VALUES (
-    '$titulo', '$actores', '$director', '$guion', '$produccion', '$anio', '$nacionalidad', '$genero', '$duracion', '$restriccion', '$sinopsis', '$imagenGuardada'
-)");
+            titulo, actores, director, guion, produccion, anio, nacionalidad, genero, duracion, restriccion, sinopsis
+        ) VALUES (
+            '$titulo', '$actores', '$director', '$guion', '$produccion', '$anio', '$nacionalidad', '$genero', '$duracion', '$restriccion', '$sinopsis'
+        )");
 ?>
 
 <!DOCTYPE html>
@@ -79,15 +57,10 @@ $inserted = $conn->query("INSERT INTO peliculas (
         <p><strong>Duración:</strong> <?= $duracion ?> minutos</p>
         <p><strong>Restricciones de edad:</strong> <?= $restriccion ?></p>
         <p><strong>Sinopsis:</strong> <?= $sinopsis ?></p>
-        <?php if ($imagenGuardada): ?>
-            <p><strong>Imagen:</strong></p>
-            <img src="<?= $imagenGuardada ?>" alt="Imagen de la película" class="img-fluid rounded shadow">
-        <?php endif; ?>
     </div>
 <?php else: ?>
     <div class="alert alert-danger">
-        Error al cargar la película: <?= $conn->error ?><br>
-        <?= isset($mensajeError) ? $mensajeError : "" ?>
+        Error al cargar la película: <?= $conn->error ?>
     </div>
 <?php endif; ?>
 
