@@ -1,19 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Ejercicio 2</title>
-</head>
-<body>
+<?php include("../../../estructura/header.php"); ?>
+
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Ejercicio 2 - TP1</h2>
+
   <!-- Formulario que pide horas trabajadas/cursadas por día -->
-  <!-- El action apunta al archivo formAccion.php (intermediario) -->
-  <form action="../../../accion/TP1/ej2/formAccion.php" method="get">
-    <label>Lunes: <input type="number" name="lunes" min="0" max="24" required /></label><br />
-    <label>Martes: <input type="number" name="martes" min="0" max="24" required /></label><br />
-    <label>Miércoles: <input type="number" name="miercoles" min="0" max="24" required /></label><br />
-    <label>Jueves: <input type="number" name="jueves" min="0" max="24" required /></label><br />
-    <label>Viernes: <input type="number" name="viernes" min="0" max="24" required /></label><br />
-    <button type="submit">Calcular</button>
+  <form action="../../../accion/TP1/ej2/formAccion.php" method="get" class="mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+      <label for="lunes" class="form-label">Lunes:</label>
+      <input type="number" id="lunes" name="lunes" min="0" max="24" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="martes" class="form-label">Martes:</label>
+      <input type="number" id="martes" name="martes" min="0" max="24" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="miercoles" class="form-label">Miércoles:</label>
+      <input type="number" id="miercoles" name="miercoles" min="0" max="24" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="jueves" class="form-label">Jueves:</label>
+      <input type="number" id="jueves" name="jueves" min="0" max="24" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="viernes" class="form-label">Viernes:</label>
+      <input type="number" id="viernes" name="viernes" min="0" max="24" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Calcular</button>
   </form>
-</body>
-</html>
+
+  <!-- Botón para volver al índice TP1 -->
+  <div class="mt-3 text-center">
+    <a href="../../../estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+  </div>
+</div>
+
+<?php include("../../../estructura/footer.php"); ?>

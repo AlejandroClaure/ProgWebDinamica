@@ -1,0 +1,17 @@
+/* html y body ocupan todo el alto */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Body como flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* asegura que el body tenga al menos toda la altura de la ventana */
+}
+
+/* Main ocupa el espacio disponible */
+main {
+  flex: 1; /* crece y empuja el footer hacia abajo */
+}

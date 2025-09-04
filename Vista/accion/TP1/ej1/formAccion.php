@@ -1,18 +1,32 @@
 <?php
-// Incluimos el archivo donde está definida la clase Numero
+// Incluimos la clase Numero
 require_once("../../../../Control/TP1/ej1/Numero.php");
 
-// Verificamos que efectivamente el usuario haya enviado un número con GET
+// Variable donde almacenaremos el mensaje final
+$resultado = "";
+
+// Verificamos que el usuario haya enviado un número
 if (isset($_GET['numero'])) {
-    // Creamos un objeto de la clase Numero, pasando el valor recibido al constructor
+    // Creamos un objeto de la clase Numero
     $numero = new Numero($_GET['numero']);
     
-    // Llamamos al método evaluar() del objeto para obtener el resultado
+    // Obtenemos el resultado llamando al método evaluar()
     $resultado = $numero->evaluar();
-    
-    // Mostramos el resultado al usuario
-    echo $resultado;
 } else {
-    // Si no se recibió ningún número, mostramos un mensaje de error
-    echo "No se recibió ningún número.";
+    // Si no se recibió ningún número, mensaje de error
+    $resultado = "No se recibió ningún número.";
 }
+
+// Incluir header y footer para mantener la estructura
+include("../../../estructura/header.php");
+?>
+
+<div class="container text-center">
+  <h2 class="mb-4">Resultado Ejercicio 1</h2>
+  <div class="alert alert-info" role="alert">
+    <?php echo $resultado; ?>
+  </div>
+  <a href="../../../estructura/TP1/ej1/index.php" class="btn btn-secondary">Volver</a>
+</div>
+
+<?php include("../../../estructura/footer.php"); ?>

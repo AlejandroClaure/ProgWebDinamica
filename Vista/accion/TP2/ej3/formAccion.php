@@ -7,28 +7,38 @@ $usuarios = [
 ];
 
 // Obtenemos los valores ingresados por el formulario mediante POST
-// Si no existen, usamos cadena vacía por defecto
 $usuarioIngresado = $_POST['usuario'] ?? '';
 $claveIngresada   = $_POST['clave'] ?? '';
 
-// Variable que indica si el login fue exitoso
+// Variable donde guardaremos el mensaje final
+$resultado = "";
+
+// Recorremos el array de usuarios para verificar login
 $loginExitoso = false;
-
-// Recorremos el array de usuarios
 foreach ($usuarios as $user) {
-  // Comparamos si el usuario y la clave ingresados coinciden con algún registro
-  if ($user['usuario'] === $usuarioIngresado && $user['clave'] === $claveIngresada) {
-    $loginExitoso = true; // Marcamos que el login fue exitoso
-    break;                // Salimos del bucle ya que encontramos coincidencia
-  }
+    if ($user['usuario'] === $usuarioIngresado && $user['clave'] === $claveIngresada) {
+        $loginExitoso = true;
+        break;
+    }
 }
 
-// Mostramos mensaje dependiendo si el login fue exitoso o no
+// Creamos el mensaje según el resultado del login
 if ($loginExitoso) {
-  echo "<h2 class='text-success text-center mt-5'>Bienvenido, $usuarioIngresado </h2>";
+    $resultado = "<span class='text-success'>Bienvenido, $usuarioIngresado</span>";
 } else {
-  echo "<h2 class='text-danger text-center mt-5'>Usuario o contraseña incorrectos </h2>";
+    $resultado = "<span class='text-danger'>Usuario o contraseña incorrectos</span>";
 }
 
-// Link para volver al formulario de login
-echo "<div class='text-center mt-3'><a href='../../../estructura/TP2/ej3/login.php'>Volver</a></div>";
+// Incluir header y footer para mantener la estructura
+include("../../../estructura/header.php");
+?>
+
+<div class="container text-center mt-5">
+  <h2 class="mb-4">Resultado Ejercicio 3</h2>
+  <div class="alert alert-info" role="alert">
+    <?php echo $resultado; ?>
+  </div>
+  <a href="../../../estructura/TP2/ej3/login.php" class="btn btn-secondary">Volver</a>
+</div>
+
+<?php include("../../../estructura/footer.php"); ?>
