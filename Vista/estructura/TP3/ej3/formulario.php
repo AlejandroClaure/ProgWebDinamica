@@ -17,7 +17,7 @@
       <!-- El formulario ahora permite subir archivos con enctype -->
       <form
         id="peliculaForm"
-        action="../../../Control/TP3/ej3/peliculas.php"
+        action="../../../accion/TP3/ej3/accionForm.php"
         method="post"
         enctype="multipart/form-data"
       >
@@ -84,6 +84,7 @@
             <label class="form-label">Género</label>
             <select name="genero" class="form-select" required>
               <option value="">Seleccione...</option>
+              <option>Acción</option>
               <option>Comedia</option>
               <option>Drama</option>
               <option>Terror</option>
