@@ -1,5 +1,5 @@
 <?php
-require_once("../../../Control/Tp3/ej3/PeliculasController.php");
+require_once("../../../../Control/TP3/ej3/PeliculasController.php");
 
 // Creamos el controlador
 $controller = new PeliculasController();

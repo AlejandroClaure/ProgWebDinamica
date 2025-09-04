@@ -84,6 +84,7 @@
             <label class="form-label">Género</label>
             <select name="genero" class="form-select" required>
               <option value="">Seleccione...</option>
+              <option>Acción</option>
               <option>Comedia</option>
               <option>Drama</option>
               <option>Terror</option>
