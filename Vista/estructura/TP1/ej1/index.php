@@ -2,7 +2,7 @@
 
 <h2 class="text-center my-4">Ejercicio 1 - TP1</h2>
 
-<!-- Formulario que pide un número al usuario -->
+<!-- Formulario -->
 <form action="../../../accion/TP1/ej1/formAccion.php" method="get" class="mx-auto" style="max-width: 400px;">
   <div class="mb-3">
     <label for="numero" class="form-label">Ingrese un número:</label>
