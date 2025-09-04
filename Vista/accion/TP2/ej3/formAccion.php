@@ -1,44 +1,30 @@
 <?php
-// Definimos un arreglo de usuarios "hardcodeado" con usuario y contraseña
-$usuarios = [
-  ["usuario" => "admin", "clave" => "admin1234"],
-  ["usuario" => "juan",  "clave" => "juan2023"],
-  ["usuario" => "maria", "clave" => "maria456"]
-];
+include("../../../estructura/header.php");
+include("../../../../Control/TP2/ej3/Usuarios.php");
 
-// Obtenemos los valores ingresados por el formulario mediante POST
+// Obtener datos del formulario
 $usuarioIngresado = $_POST['usuario'] ?? '';
 $claveIngresada   = $_POST['clave'] ?? '';
 
-// Variable donde guardaremos el mensaje final
-$resultado = "";
+// Crear objeto de la clase Usuarios
+$usuarios = new Usuarios();
 
-// Recorremos el array de usuarios para verificar login
-$loginExitoso = false;
-foreach ($usuarios as $user) {
-    if ($user['usuario'] === $usuarioIngresado && $user['clave'] === $claveIngresada) {
-        $loginExitoso = true;
-        break;
-    }
-}
-
-// Creamos el mensaje según el resultado del login
-if ($loginExitoso) {
-    $resultado = "<span class='text-success'>Bienvenido, $usuarioIngresado</span>";
-} else {
-    $resultado = "<span class='text-danger'>Usuario o contraseña incorrectos</span>";
-}
-
-// Incluir header y footer para mantener la estructura
-include("../../../estructura/header.php");
+// Verificar login
+$loginExitoso = $usuarios->verificarLogin($usuarioIngresado, $claveIngresada);
 ?>
 
 <div class="container text-center mt-5">
-  <h2 class="mb-4">Resultado Ejercicio 3</h2>
-  <div class="alert alert-info" role="alert">
-    <?php echo $resultado; ?>
-  </div>
-  <a href="../../../estructura/TP2/ej3/login.php" class="btn btn-secondary">Volver</a>
+    <h2 class="mb-4">Resultado del Login</h2>
+    <?php if ($loginExitoso): ?>
+        <div class="alert alert-success">
+            Bienvenido, <?php echo htmlspecialchars($usuarioIngresado); ?> !!
+        </div>
+    <?php else: ?>
+        <div class="alert alert-danger">
+            Usuario o contraseña incorrectos
+        </div>
+    <?php endif; ?>
+    <a href="../../../estructura/TP2/ej3/index.php" class="btn btn-secondary mt-3">Volver</a>
 </div>
 
 <?php include("../../../estructura/footer.php"); ?>

@@ -18,7 +18,7 @@ if (isset($_GET['numero'])) {
 }
 
 // Incluir header y footer para mantener la estructura
-include("../../../estructura/header.php");
+include_once("../../../estructura/header.php");
 ?>
 
 <div class="container text-center">
@@ -29,4 +29,4 @@ include("../../../estructura/header.php");
   <a href="../../../estructura/TP1/ej1/index.php" class="btn btn-secondary">Volver</a>
 </div>
 
-<?php include("../../../estructura/footer.php"); ?>
+<?php include_once("../../../estructura/footer.php"); ?>

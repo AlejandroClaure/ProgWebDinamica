@@ -11,15 +11,17 @@ class Numero {
 
     // Método para evaluar el número
     public function evaluar() {
+        $retorno= "";
         // Si el número es mayor a 0 → es positivo
         if ($this->valor > 0) {
-            return "El número {$this->valor} es POSITIVO";
+            $retorno= "El número {$this->valor} es POSITIVO";
         // Si el número es menor a 0 → es negativo
         } elseif ($this->valor < 0) {
-            return "El número {$this->valor} es NEGATIVO";
+            $retorno= "El número {$this->valor} es NEGATIVO";
         // Si no es mayor ni menor → entonces es 0
         } else {
-            return "El número es CERO";
+            $retorno= "El número es CERO";
         }
+        return $retorno;
     }
 }

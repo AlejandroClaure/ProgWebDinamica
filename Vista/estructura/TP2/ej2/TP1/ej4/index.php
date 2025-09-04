@@ -3,7 +3,7 @@
 <div class="container mt-5">
   <h2 class="mb-4 text-center">Ejercicio 3 - TP1</h2>
 
-  <!-- Formulario para capturar los datos de la persona -->
+  <!-- Formulario que pide los datos de la persona -->
   <form id="formulario" action="../../../accion/TP1/ej3/formAccion.php" method="post" class="mx-auto" style="max-width: 400px;">
     <div class="mb-3">
       <label for="nombre" class="form-label">Nombre:</label>
@@ -35,3 +35,6 @@
 </div>
 
 <?php include("../../../estructura/footer.php"); ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script>$(document).ready(function(){ $("#formulario").validate(); });</script>

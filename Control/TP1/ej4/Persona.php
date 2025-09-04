@@ -23,9 +23,11 @@ class Persona {
     // Método que indica si la persona es mayor o menor de edad
     public function verificarEdad() {
         if ($this->edad >= 18) {
-            return "Eres mayor de edad.";
+            $retorno="";
+            $retorno= "Eres mayor de edad.";
         } else {
-            return "Eres menor de edad.";
+            $retorno= "Eres menor de edad.";
         }
+        return $retorno;
     }
 }

@@ -1,40 +1,81 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Ejercicio 2 - Validación</title>
+<?php include("../../header.php"); ?>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">TP1 - Índice de Ejercicios</h2>
 
-  <!-- jQuery y plugin validate -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 1</h5>
+          <a href="TP1/ej1/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
+    </div>
 
-  <!-- Script local -->
-  <script src="../../../js/TP2/ej2/validacion.js"></script>
-</head>
-<body class="container mt-5">
-  <h2>Validación con jQuery + Bootstrap</h2>
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 2</h5>
+          <a href="TP1/ej2/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
+    </div>
 
-  <form id="formulario" action="../../../accion/TP2/ej2/formAccion.php" method="post" novalidate>
-    <div class="mb-3">
-      <label class="form-label">Nombre</label>
-      <input type="text" name="nombre" class="form-control" required>
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 3</h5>
+          <a href="TP1/ej3/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label class="form-label">Apellido</label>
-      <input type="text" name="apellido" class="form-control" required>
+
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 4</h5>
+          <a href="TP1/ej4/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label class="form-label">Edad</label>
-      <input type="number" name="edad" class="form-control" min="0" required>
+
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 5</h5>
+          <a href="TP1/ej5/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label class="form-label">Dirección</label>
-      <input type="text" name="direccion" class="form-control" required>
+
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 6</h5>
+          <a href="TP1/ej6/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
     </div>
-    <button type="submit" class="btn btn-success">Enviar</button>
-  </form>
-</body>
-</html>
+
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 7</h5>
+          <a href="TP1/ej7/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title">Ejercicio 8</h5>
+          <a href="TP1/ej8/index.php" class="btn btn-primary">Ir al ejercicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php include("../../footer.php"); ?>

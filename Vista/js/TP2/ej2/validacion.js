@@ -1,57 +1,41 @@
 $(document).ready(function () {
-  // Inicializamos la validación en el formulario con id="formulario"
-  $("#formulario").validate({
-    // Clases de Bootstrap para inputs válidos o inválidos
-    errorClass: "is-invalid",
-    validClass: "is-valid",
-
-    // Contenedor de cada mensaje de error
-    errorElement: "div",
-    errorPlacement: function (error, element) {
-      error.addClass("invalid-feedback"); // clase Bootstrap para mensajes
-      error.insertAfter(element); // se coloca después del campo
-    },
-
-    // Reglas de validación por campo
+  $("#form2").validate({
     rules: {
-      nombre: {
-        required: true, // obligatorio
-        minlength: 2, // mínimo 2 caracteres
-      },
-      apellido: {
-        required: true, // obligatorio
-        minlength: 2, // mínimo 2 caracteres
+      numero: {
+        required: true,
+        number: true
       },
       edad: {
         required: true,
-        number: true, // debe ser un número
-        min: 0, // mínimo 0
-      },
-      direccion: {
-        required: true, // obligatorio
-        minlength: 5, // mínimo 5
-      },
+        number: true,
+        min: 1,
+        max: 120
+      }
     },
-
-    // Mensajes de error personalizados
     messages: {
-      nombre: {
-        required: "Por favor ingrese su nombre",
-        minlength: "El nombre debe tener al menos 2 caracteres",
-      },
-      apellido: {
-        required: "Por favor ingrese su apellido",
-        minlength: "El apellido debe tener al menos 2 caracteres",
+      numero: {
+        required: "Por favor ingrese un número",
+        number: "Debe ingresar un número válido"
       },
       edad: {
-        required: "Ingrese su edad",
+        required: "Por favor ingrese su edad",
         number: "Debe ser un número válido",
-        min: "La edad no puede ser negativa",
-      },
-      direccion: {
-        required: "Ingrese su dirección",
-        minlength: "La dirección debe tener al menos 5 caracteres",
-      },
+        min: "La edad mínima es 1",
+        max: "La edad máxima es 120"
+      }
     },
+    errorClass: "invalid-feedback",
+    highlight: function (element) {
+      $(element).addClass("is-invalid").removeClass("is-valid");
+    },
+    unhighlight: function (element) {
+      $(element).removeClass("is-invalid").addClass("is-valid");
+    },
+    errorPlacement: function (error, element) {
+      error.insertAfter(element);
+    },
+    submitHandler: function (form) {
+      form.submit(); // ✅ solo se envía si pasa validación
+    }
   });
 });

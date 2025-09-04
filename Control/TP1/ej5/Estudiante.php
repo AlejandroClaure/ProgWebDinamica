@@ -16,12 +16,14 @@ class Estudiante {
 
     // Método para traducir el nivel de estudios
     private function getEstudiosTexto() {
+        $msj="";
         switch ($this->estudios) {
-            case 1: return "Sin estudios";
-            case 2: return "Primarios";
-            case 3: return "Secundarios";
-            default: return "Desconocido";
+            case 1: $msj= "Sin estudios";
+            case 2: $msj= "Primarios";
+            case 3: $msj= "Secundarios";
+            default: $msj= "Desconocido";
         }
+        return $msj;
     }
 
     // Método que presenta los datos

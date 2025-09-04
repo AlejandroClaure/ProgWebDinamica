@@ -1,4 +1,4 @@
-<?php include("../../../estructura/header.php"); ?>
+<?php include("../../../../../estructura/header.php"); ?>
 
 <h2 class="text-center my-4">Ejercicio 1 - TP1</h2>
 
@@ -13,7 +13,14 @@
 
 <!-- Botón para volver al índice TP1 -->
 <div class="mt-3 text-center">
-  <a href="../../../estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+  <a href="../../index.php" class="btn btn-secondary">Volver al inicio TP1</a>
 </div>
 
-<?php include("../../../estructura/footer.php"); ?>
+<?php include("../../../../footer.php"); ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#formulario").validate();
+  });
+</script>
