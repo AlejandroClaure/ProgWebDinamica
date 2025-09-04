@@ -1,14 +1,34 @@
 <?php
-$n1 = $_GET['n1'];
-$n2 = $_GET['n2'];
-$op = $_GET['operacion'];
+// Clase Calculadora
+class Calculadora {
+    private $n1;
+    private $n2;
+    private $operacion;
 
-switch($op){
-    case '+': $res = $n1 + $n2; break;
-    case '-': $res = $n1 - $n2; break;
-    case '*': $res = $n1 * $n2; break;
-    case '/': $res = $n2 != 0 ? $n1 / $n2 : "Error: división por cero"; break;
+    public function __construct($n1, $n2, $operacion) {
+        $this->n1 = $n1;
+        $this->n2 = $n2;
+        $this->operacion = $operacion;
+    }
+
+    public function calcular() {
+        switch ($this->operacion) {
+            case '+':
+                $res = $this->n1 + $this->n2;
+                break;
+            case '-':
+                $res = $this->n1 - $this->n2;
+                break;
+            case '*':
+                $res = $this->n1 * $this->n2;
+                break;
+            case '/':
+                $res = ($this->n2 != 0) ? $this->n1 / $this->n2 : "Error: división por cero";
+                break;
+            default:
+                $res = "Operación no válida";
+        }
+
+        return "{$this->n1} {$this->operacion} {$this->n2} = {$res}";
+    }
 }
-
-echo "$n1 $op $n2 = $res";
-?>

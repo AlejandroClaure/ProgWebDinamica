@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2 - Validación</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery y plugin validate -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+
+  <!-- Script local -->
+  <script src="../../../js/TP2/ej2/validacion.js"></script>
+</head>
+<body class="container mt-5">
+  <h2>Validación con jQuery + Bootstrap</h2>
+
+  <form id="formulario" action="../../../accion/TP2/ej2/formAccion.php" method="post" novalidate>
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input type="text" name="nombre" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Apellido</label>
+      <input type="text" name="apellido" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Edad</label>
+      <input type="number" name="edad" class="form-control" min="0" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Dirección</label>
+      <input type="text" name="direccion" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</body>
+</html>
