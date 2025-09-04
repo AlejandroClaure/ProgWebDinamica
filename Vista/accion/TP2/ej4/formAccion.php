@@ -1,6 +1,6 @@
 <?php
 // Cargamos el controlador
-require_once(__DIR__ . "/../../../../Control/Tp2/ej4/peliculasController.php");
+require_once(__DIR__ . "../../../../Control/TP2/ej4/peliculasController.php");
 
 // Creamos instancia y guardamos los datos enviados por POST
 $controller = new PeliculasController();

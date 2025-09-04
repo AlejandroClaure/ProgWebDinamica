@@ -1,6 +1,6 @@
 <?php
 // Carpeta donde se guardarán los archivos
-$uploadDir = __DIR__ . "/../../../uploads/";
+$uploadDir = __DIR__ . "../../../../uploads/";
 if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
 
 // Recibimos el archivo del formulario
@@ -18,7 +18,7 @@ if ($archivo) {
         if (move_uploaded_file($archivo['tmp_name'], $rutaDestino)) {
             echo "<div class='alert alert-success'>
                     Archivo subido correctamente: 
-                    <a href='../../../uploads/$nombreArchivo' target='_blank'>$nombreArchivo</a>
+                    <a href='../../../../uploads/$nombreArchivo' target='_blank'>$nombreArchivo</a>
                   </div>";
         } else {
             echo "<div class='alert alert-danger'>Error al guardar el archivo.</div>";
