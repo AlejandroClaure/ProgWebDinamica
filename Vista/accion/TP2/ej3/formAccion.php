@@ -24,7 +24,7 @@ $loginExitoso = $usuarios->verificarLogin($usuarioIngresado, $claveIngresada);
             Usuario o contraseña incorrectos
         </div>
     <?php endif; ?>
-    <a href="../../../estructura/TP2/ej3/index.php" class="btn btn-secondary mt-3">Volver</a>
+    <a href="estructura/TP2/ej3/index.php" class="btn btn-secondary mt-3">Volver</a>
 </div>
 
 <?php include("../../../estructura/footer.php"); ?>

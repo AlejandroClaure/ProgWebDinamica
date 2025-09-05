@@ -29,7 +29,7 @@ include("../../../estructura/header.php");
   <div class="text-start">
     <?php echo $resultado; ?>
   </div>
-  <a href="../../../estructura/TP3/ej2/index.php" class="btn btn-secondary mt-3">Volver</a>
+  <a href="estructura/TP3/ej2/index.php" class="btn btn-secondary mt-3">Volver</a>
 </div>
 
 <?php include("../../../estructura/footer.php"); ?>

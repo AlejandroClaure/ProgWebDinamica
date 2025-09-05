@@ -18,7 +18,7 @@ if (count($errores) > 0) {
         echo "<li>$error</li>";
     }
     echo "</ul>";
-    echo "<a href='../../../../Vista/TP2/ej2/index.php' class='btn btn-secondary'>Volver</a>";
+    echo "<a href='estructura/TP2/ej2/index.php' class='btn btn-secondary'>Volver</a>";
     echo "</div>";
     include("../../../vista/estructura/footer.php");
     exit;

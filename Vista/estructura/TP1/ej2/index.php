@@ -4,7 +4,7 @@
   <h2 class="mb-4 text-center">Ejercicio 2 - TP1</h2>
 
   <!-- Formulario que pide horas trabajadas/cursadas por día -->
-  <form id="formulario" action="../../../accion/TP1/ej2/formAccion.php" method="get" class="mx-auto" style="max-width: 400px;">
+  <form id="formulario" action="accion/TP1/ej2/formAccion.php" method="get" class="mx-auto" style="max-width: 400px;">
     <div class="mb-3">
       <label for="lunes" class="form-label">Lunes:</label>
       <input type="number" id="lunes" name="lunes" min="0" max="24" class="form-control" required>
@@ -35,7 +35,7 @@
 
   <!-- Botón para volver al índice TP1 -->
   <div class="mt-3 text-center">
-    <a href="../../../estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+    <a href="estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
   </div>
 </div>
 

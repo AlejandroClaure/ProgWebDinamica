@@ -18,8 +18,8 @@ include("../../../estructura/header.php");
 
   <!-- Botones para volver -->
   <div class="mt-3">
-    <a href="../../../estructura/TP2/ej4/peliculasForm.php" class="btn btn-primary">Cargar otra película</a>
-    <a href="../../../estructura/TP2/ej4/listadoPeliculas.php" class="btn btn-secondary">Ver listado</a>
+    <a href="estructura/TP2/ej4/peliculasForm.php" class="btn btn-primary">Cargar otra película</a>
+    <a href="estructura/TP2/ej4/listadoPeliculas.php" class="btn btn-secondary">Ver listado</a>
   </div>
 </div>
 

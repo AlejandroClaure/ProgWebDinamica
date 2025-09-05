@@ -8,7 +8,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 1</h5>
-          <a href="TP1/ej1/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej1/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 2</h5>
-          <a href="TP1/ej2/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej2/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 3</h5>
-          <a href="TP1/ej3/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej3/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -35,7 +35,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 4</h5>
-          <a href="TP1/ej4/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej4/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 5</h5>
-          <a href="TP1/ej5/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej5/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 6</h5>
-          <a href="TP1/ej6/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej6/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 7</h5>
-          <a href="TP1/ej7/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej7/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
       <div class="card text-center h-100">
         <div class="card-body">
           <h5 class="card-title">Ejercicio 8</h5>
-          <a href="TP1/ej8/index.php" class="btn btn-primary">Ir al ejercicio</a>
+          <a href="estructura/TP2/ej2/TP1/ej8/index.php" class="btn btn-primary">Ir al ejercicio</a>
         </div>
       </div>
     </div>

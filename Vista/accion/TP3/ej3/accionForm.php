@@ -16,7 +16,7 @@ include("../../../estructura/header.php");
   </div>
 
   <div class="mt-3">
-    <a href="../../../estructura/TP3/ej3/formulario.php" class="btn btn-secondary">Volver</a>
+    <a href="estructura/TP3/ej3/formulario.php" class="btn btn-secondary">Volver</a>
   </div>
 </div>
 
