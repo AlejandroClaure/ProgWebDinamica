@@ -69,7 +69,7 @@ class PeliculasController {
         return "
         <div class='alert alert-success'>
           <h3 class='text-primary'>La película introducida es:</h3>
-          <ol>
+          <ul>
             <li><strong>Título:</strong> $titulo</li>
             <li><strong>Actores:</strong> $actores</li>
             <li><strong>Director:</strong> $director</li>
@@ -84,7 +84,7 @@ class PeliculasController {
             <li><strong>Imagen:</strong><br>
               <img src='../../../uploads/$imagenNombre' class='img-fluid' alt='Imagen de la película'>
             </li>
-          </ol>
+          </ul>
         </div>";
     }
 }

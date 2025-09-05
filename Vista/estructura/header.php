@@ -5,6 +5,7 @@
   <title>Trabajos Prácticos</title>
   <link rel="stylesheet" href="/css/stylesGlobal.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <base href="http://localhost/ProgWebDinamica/Vista/estructura/">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -24,14 +25,14 @@
               TP1
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/estructura/TP1/ej1/index.php">Ejercicio 1</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej2/index.php">Ejercicio 2</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej3/index.php">Ejercicio 3</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej4/index.php">Ejercicio 4</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej5/index.php">Ejercicio 5</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej6/index.php">Ejercicio 6</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej7/index.php">Ejercicio 7</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP1/ej8/index.php">Ejercicio 8</a></li>
+              <li><a class="dropdown-item" href="TP1/ej1/index.php">Ejercicio 1</a></li>
+              <li><a class="dropdown-item" href="TP1/ej2/index.php">Ejercicio 2</a></li>
+              <li><a class="dropdown-item" href="TP1/ej3/index.php">Ejercicio 3</a></li>
+              <li><a class="dropdown-item" href="TP1/ej4/index.php">Ejercicio 4</a></li>
+              <li><a class="dropdown-item" href="TP1/ej5/index.php">Ejercicio 5</a></li>
+              <li><a class="dropdown-item" href="TP1/ej6/index.php">Ejercicio 6</a></li>
+              <li><a class="dropdown-item" href="TP1/ej7/index.php">Ejercicio 7</a></li>
+              <li><a class="dropdown-item" href="TP1/ej8/index.php">Ejercicio 8</a></li>
             </ul>
           </li>
           <!-- Dropdown TP2 -->
@@ -40,9 +41,9 @@
               TP2
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/estructura/TP2/ej1/index.php">Ejercicio 1</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP2/ej2/index.php">Ejercicio 2</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP2/ej3/index.php">Ejercicio 3</a></li>
+              <li><a class="dropdown-item" href="TP2/ej1/index.php">Ejercicio 1</a></li>
+              <li><a class="dropdown-item" href="TP2/ej2/index.php">Ejercicio 2</a></li>
+              <li><a class="dropdown-item" href="TP2/ej3/index.php">Ejercicio 3</a></li>
             </ul>
           </li>
           <!-- Dropdown TP3 -->
@@ -51,9 +52,9 @@
               TP3
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/estructura/TP3/ej1/formulario.html">Ejercicio 1</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP3/ej2/formulario.php">Ejercicio 2</a></li>
-              <li><a class="dropdown-item" href="/estructura/TP3/ej3/formulario.php">Ejercicio 3</a></li>
+              <li><a class="dropdown-item" href="TP3/ej1/formulario.php">Ejercicio 1</a></li>
+              <li><a class="dropdown-item" href="TP3/ej2/formulario.php">Ejercicio 2</a></li>
+              <li><a class="dropdown-item" href="TP3/ej3/formulario.php">Ejercicio 3</a></li>
             </ul>
           </li>
         </ul>
