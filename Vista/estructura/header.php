@@ -12,13 +12,13 @@
   <!-- Navbar de Bootstrap -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="ProgWebDinamica/Vista/estructura/index.php">Mis TPs</a>
+      <a class="navbar-brand" href="index.php">Mis TPs</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <!-- Dropdown TP1 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,4 +63,4 @@
   </nav>
 
   <!-- Contenedor principal -->
-  <main class="flex-fill">
+  <main class="flex-fill mb-4">

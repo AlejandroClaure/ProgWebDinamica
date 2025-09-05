@@ -1,7 +1,7 @@
 <?php include("../../../estructura/header.php"); ?>
 
 <div class="container mt-5">
-  <h2 class="mb-4 text-center">Ejercicio 3 - TP1</h2>
+  <h2 class="mb-4 text-center">Ejercicio 4 - TP1</h2>
 
   <!-- Formulario que pide los datos de la persona -->
   <form id="formulario" action="../../../accion/TP1/ej3/formAccion.php" method="post" class="mx-auto" style="max-width: 400px;">

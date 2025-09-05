@@ -36,7 +36,7 @@
         <div class="card-body">
           <h5 class="card-title">Trabajo Práctico 3</h5>
           <p class="card-text">Ejercicios de orientación a objetos.</p>
-          <a href="TP3/ej1/index.php" class="btn btn-danger">Ingresar</a>
+          <a href="TP3/ej1/formulario.php" class="btn btn-danger">Ingresar</a>
         </div>
       </div>
     </div>
