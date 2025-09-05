@@ -8,3 +8,7 @@ https://www.php.net/manual/en/function.move-uploaded-file.php
 https://www.php.net/manual/en/function.basename.php
 
 https://www.php.net/manual/es/function.pathinfo.php
+
+
+Recordar que para abrir el documento en xampp, el proyecto debe estar alojado dentro de htdocs de la siguiente manera:
+C:\xampp\htdocs\ProgWebDinamica
