@@ -100,7 +100,7 @@ class PeliculasController
             <li><strong>Restricciones de edad:</strong> $restriccion</li>
             <li><strong>Sinopsis:</strong> $sinopsis</li>
             <li><strong>Imagen:</strong><br>
-              <img src='/ProgWebDinamica/uploads/$imagenNombre' class='img-fluid' alt='Imagen de la película'>
+              <img src='uploads/$imagenNombre' class='img-fluid' alt='Imagen de la película'>
             </li>
           </ul>
         </div>";

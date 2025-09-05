@@ -1,0 +1,67 @@
+[
+    {
+        "titulo": "Kill Bill: volumen 1",
+        "actores": "asdf",
+        "director": "asdf",
+        "guion": "Quetin Tarantino",
+        "produccion": "asdfasdfsdaf",
+        "anio": 123,
+        "nacionalidad": "12",
+        "genero": "Comedia",
+        "duracion": 12,
+        "restriccion": "Todo P\u00fablico",
+        "sinopsis": "asdf"
+    },
+    {
+        "titulo": "",
+        "actores": "",
+        "director": "",
+        "guion": "",
+        "produccion": "",
+        "anio": 0,
+        "nacionalidad": "",
+        "genero": "",
+        "duracion": 0,
+        "restriccion": "Todo P\u00fablico",
+        "sinopsis": ""
+    },
+    {
+        "titulo": "",
+        "actores": "",
+        "director": "",
+        "guion": "",
+        "produccion": "",
+        "anio": 0,
+        "nacionalidad": "",
+        "genero": "",
+        "duracion": 0,
+        "restriccion": "Todo P\u00fablico",
+        "sinopsis": ""
+    },
+    {
+        "titulo": "",
+        "actores": "",
+        "director": "",
+        "guion": "",
+        "produccion": "",
+        "anio": 0,
+        "nacionalidad": "",
+        "genero": "",
+        "duracion": 0,
+        "restriccion": "Todo P\u00fablico",
+        "sinopsis": ""
+    },
+    {
+        "titulo": "",
+        "actores": "",
+        "director": "",
+        "guion": "",
+        "produccion": "",
+        "anio": 0,
+        "nacionalidad": "",
+        "genero": "",
+        "duracion": 0,
+        "restriccion": "Todo P\u00fablico",
+        "sinopsis": ""
+    }
+]

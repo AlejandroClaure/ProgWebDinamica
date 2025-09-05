@@ -15,7 +15,7 @@ class PeliculasController {
      * Crea el archivo JSON si no existe.
      */
     public function __construct() {
-        $this->file = __DIR__ . "/../../../uploads/peliculas.json";
+        $this->file = __DIR__ . "/uploads/peliculastp2.json";
 
         if (!file_exists($this->file)) {
             file_put_contents($this->file, json_encode([]));

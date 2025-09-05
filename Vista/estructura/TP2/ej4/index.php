@@ -5,7 +5,7 @@
     <div class="card-body">
       <h2 class="mb-4 text-primary">🎬 Cinem@</h2>
 
-      <form id="peliculaForm" action="accion/TP2/ej4/formAccion.php" method="post" novalidate>
+      <form id="peliculaForm" action="accion/TP2/ej4/formAccion.php" method="post">
         <!-- Título y actores -->
         <div class="row mb-3">
           <div class="col-md-6">
@@ -108,3 +108,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
 <script src="../../js/Tp2/ej4/validacionPeliculas.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#peliculaForm").validate();
+  });
+</script>
