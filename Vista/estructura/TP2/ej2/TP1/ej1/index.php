@@ -1,6 +1,6 @@
 <?php include("../../../../../estructura/header.php"); ?>
 
-<h2 class="text-center my-4">Ejercicio 1 - TP1</h2>
+<h2 class="text-center my-4">Ejercicio 1</h2>
 
 <!-- Formulario -->
 <form id="formulario" action="accion/TP1/ej1/formAccion.php" method="get" class="mx-auto" style="max-width: 400px;">
@@ -13,7 +13,7 @@
 
 <!-- Botón para volver al índice TP1 -->
 <div class="mt-3 text-center">
-  <a href="../../index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+  <a href="estructura/TP2/ej2/index.php" class="btn btn-secondary">Volver Submenu TP2</a>
 </div>
 
 <?php include("../../../../footer.php"); ?>

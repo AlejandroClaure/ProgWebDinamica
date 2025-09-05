@@ -1,6 +1,6 @@
 <?php
-// Incluimos la clase Horas desde la carpeta Control
-require_once("../../../../Control/TP1/ej2/Horas.php");
+// Incluimos la clase horasController desde la carpeta Control
+require_once(__DIR__ . "/../../../../Control/TP1/ej2/horasController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";
@@ -18,7 +18,7 @@ if (isset($_GET['lunes'], $_GET['martes'], $_GET['miercoles'], $_GET['jueves'], 
     ];
     
     // Creamos un objeto de la clase Horas
-    $horas = new Horas($dias);
+    $horas = new horasController($dias);
     
     // Obtenemos el total de horas
     $total = $horas->calcularTotal();

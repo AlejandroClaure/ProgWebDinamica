@@ -2,7 +2,7 @@
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p>&copy; <?php echo date("Y"); ?> - Todos los derechos reservados</p>
+    <p>&copy; <?php echo date("Y"); ?> PWD Grupo 3 - Hernandez Angeles Lucia/Otermin Carolina/Claure Alejandro Santos/Nasabun Cyntia </p>
   </footer>
 
   <!-- Bootstrap JS -->

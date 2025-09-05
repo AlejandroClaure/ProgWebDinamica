@@ -1,13 +1,13 @@
 <?php
 include("../../../estructura/header.php");
-include("../../../../Control/TP2/ej3/Usuarios.php");
+include("../../../../Control/TP2/ej3/usuariosController.php");
 
 // Obtener datos del formulario
 $usuarioIngresado = $_POST['usuario'] ?? '';
 $claveIngresada   = $_POST['clave'] ?? '';
 
 // Crear objeto de la clase Usuarios
-$usuarios = new Usuarios();
+$usuarios = new usuariosController();
 
 // Verificar login
 $loginExitoso = $usuarios->verificarLogin($usuarioIngresado, $claveIngresada);

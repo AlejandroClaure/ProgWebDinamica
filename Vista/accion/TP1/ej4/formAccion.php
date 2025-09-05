@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Persona
-require_once("../../../../Control/TP1/ej4/Persona.php");
+require_once("../../../../Control/TP1/ej4/personaEdadController.php");
 
 // Variable donde almacenaremos el mensaje final
 $resultado = "";
@@ -9,7 +9,7 @@ $resultado = "";
 if (isset($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['direccion'])) {
     
     // Creamos un objeto Persona con los datos del formulario
-    $persona = new Persona(
+    $persona = new personaEdadController(
         $_POST['nombre'],
         $_POST['apellido'],
         $_POST['edad'],
@@ -17,8 +17,7 @@ if (isset($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['direccio
     );
 
     // Concatenamos los mensajes
-    $resultado .= $persona->presentarse();
-    $resultado .= "<br>";
+    $resultado  = $persona->presentarse() . "<br>";
     $resultado .= $persona->verificarEdad();
 
 } else {

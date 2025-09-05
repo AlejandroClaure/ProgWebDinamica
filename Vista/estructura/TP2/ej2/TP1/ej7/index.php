@@ -1,7 +1,7 @@
 <?php include("../../../../../estructura/header.php"); ?>
 
 <div class="container mt-5">
-  <h2 class="mb-4 text-center">Ejercicio 7 - TP1</h2>
+  <h2 class="mb-4 text-center">Ejercicio 7</h2>
 
   <!-- Formulario para realizar operaciones de la calculadora -->
   <form id="formulario" action="accion/TP1/ej7/formAccion.php" method="post" class="mx-auto" style="max-width: 400px;">
@@ -30,7 +30,7 @@
 
   <!-- Botón para volver al índice TP1 -->
   <div class="mt-3 text-center">
-    <a href="estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+  <a href="estructura/TP2/ej2/index.php" class="btn btn-secondary">Volver Submenu TP2</a>
   </div>
 </div>
 

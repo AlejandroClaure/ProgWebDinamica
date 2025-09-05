@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Persona
-require_once("../../../../Control/TP1/ej3/Persona.php");
+require_once(__DIR__ . "/../../../../Control/TP1/ej3/personaController.php");
 
 // Variable donde almacenaremos el mensaje final
 $resultado = "";
@@ -9,7 +9,7 @@ $resultado = "";
 if (isset($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['direccion'])) {
     
     // Creamos un objeto Persona con los datos del formulario
-    $persona = new Persona(
+    $persona = new personaController(
         $_POST['nombre'],
         $_POST['apellido'],
         $_POST['edad'],

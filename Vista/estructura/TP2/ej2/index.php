@@ -1,7 +1,7 @@
 <?php include("../../header.php"); ?>
 
 <div class="container mt-5">
-  <h2 class="mb-4 text-center">TP1 - Índice de Ejercicios</h2>
+  <h2 class="mb-4 text-center">Índice de Ejercicios</h2>
 
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div class="col">

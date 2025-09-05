@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Entradas
-require_once("../../../../Control/TP1/ej8/Entradas.php");
+require_once("../../../../Control/TP1/ej8/entradasController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";
@@ -11,7 +11,7 @@ if (isset($_POST['edad'])) {
     $edad = $_POST['edad'];
     $estudiante = isset($_POST['estudiante']); // true si está marcado
 
-    $entrada = new Entradas($edad, $estudiante);
+    $entrada = new entradasController($edad, $estudiante);
     $resultado = $entrada->calcularPrecio();
 
 } else {

@@ -146,6 +146,8 @@
 
       <button type="submit" class="btn btn-primary">Enviar</button>
       <button type="reset" class="btn btn-secondary">Borrar</button>
+      <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio</a>
+
     </form>
   </div>
 </div>

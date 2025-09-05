@@ -1,6 +1,6 @@
 <?php
-// Incluimos la clase Numero
-require_once("../../../../Control/TP1/ej1/Numero.php");
+// Incluimos la clase numeroController
+require_once(__DIR__ . "/../../../../Control/TP1/ej1/numeroController.php");
 
 // Variable donde almacenaremos el mensaje final
 $resultado = "";
@@ -8,7 +8,7 @@ $resultado = "";
 // Verificamos que el usuario haya enviado un número
 if (isset($_GET['numero'])) {
     // Creamos un objeto de la clase Numero
-    $numero = new Numero($_GET['numero']);
+    $numero = new numeroController($_GET['numero']);
     
     // Obtenemos el resultado llamando al método evaluar()
     $resultado = $numero->evaluar();

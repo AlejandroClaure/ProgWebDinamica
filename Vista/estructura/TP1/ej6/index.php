@@ -32,7 +32,7 @@
 
   <!-- Botón para volver al índice TP1 -->
   <div class="mt-3 text-center">
-    <a href="estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+    <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio</a>
   </div>
 </div>
 

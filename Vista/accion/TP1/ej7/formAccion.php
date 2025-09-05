@@ -1,13 +1,13 @@
 <?php
 // Incluimos la clase Calculadora
-require_once("../../../../Control/TP1/ej7/Calculadora.php");
+require_once("../../../../Control/TP1/ej7/calculadoraController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";
 
 // Verificamos que llegaron todos los datos
 if (isset($_POST['n1'], $_POST['n2'], $_POST['operacion'])) {
-    $calc = new Calculadora($_POST['n1'], $_POST['n2'], $_POST['operacion']);
+    $calc = new calculadoraController($_POST['n1'], $_POST['n2'], $_POST['operacion']);
     $resultado = $calc->calcular();
 } else {
     // Mensaje de error si faltan datos

@@ -1,8 +1,8 @@
 <?php
-require_once("../../../../Control/TP3/ej3/PeliculasController.php");
+require_once("../../../../Control/TP3/ej3/peliculasController.php");
 
 // Creamos el controlador y guardamos la película
-$controller = new PeliculasController();
+$controller = new peliculasController();
 $resultado = $controller->guardar($_POST, $_FILES);
 
 // Incluir header y footer para mantener la estructura

@@ -1,5 +1,5 @@
 <?php
-class PeliculasController {
+class peliculasController {
     private $jsonFile; // archivo JSON donde guardaremos las películas
     private $uploadDir; // carpeta donde guardaremos imágenes
 

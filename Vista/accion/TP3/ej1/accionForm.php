@@ -1,8 +1,8 @@
 <?php
-require_once("../../../../Control/TP3/ej1/ArchivoController.php");
+require_once("../../../../Control/TP3/ej1/archivoController.php");
 
 // Crear el controller y guardar el archivo
-$controller = new ArchivoController();
+$controller = new archivoController();
 $resultado = $controller->guardar($_POST, $_FILES);
 
 // Incluir header con <base>

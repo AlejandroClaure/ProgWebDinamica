@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Estudiante
-require_once("../../../../Control/TP1/ej5/Estudiante.php");
+require_once("../../../../Control/TP1/ej5/estudianteController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";
@@ -9,7 +9,7 @@ $resultado = "";
 if (isset($_POST['nombre'], $_POST['edad'], $_POST['estudios'], $_POST['sexo'])) {
     
     // Creamos un objeto Estudiante con los datos recibidos
-    $estudiante = new Estudiante(
+    $estudiante = new estudianteController(
         $_POST['nombre'],
         $_POST['edad'],
         $_POST['estudios'],

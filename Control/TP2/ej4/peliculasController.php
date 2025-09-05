@@ -1,5 +1,5 @@
 <?php
-class PeliculasController {
+class peliculasController {
     private $file;
 
     public function __construct() {

@@ -3,7 +3,7 @@
 require_once(__DIR__ . "../../../../Control/TP2/ej4/peliculasController.php");
 
 // Creamos instancia y guardamos los datos enviados por POST
-$controller = new PeliculasController();
+$controller = new peliculasController();
 $resultado = $controller->guardar($_POST);
 
 // Incluir header y footer para mantener la estructura
