@@ -64,11 +64,8 @@ class PeliculasController
             }
         }
 
-        if ($mensaje !== "") {
-            return $mensaje;
-        }
-
-        // Leemos y actualizamos JSON
+        if ($mensaje == "") {
+                    // Leemos y actualizamos JSON
         $peliculas = json_decode(file_get_contents($this->jsonFile), true);
         $peliculas[] = [
             'titulo' => $titulo,
@@ -108,6 +105,10 @@ class PeliculasController
           </ul>
         </div>";
 
+        
+        }        
         return $mensaje;
+
+
     }
 }

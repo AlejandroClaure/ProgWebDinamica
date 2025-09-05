@@ -5,7 +5,7 @@
     <div class="card-body">
       <h2 class="mb-4 text-primary">🎬 Cinem@</h2>
 
-      <form id="peliculaForm" action="../../../accion/TP2/ej4/formAccion.php" method="post" novalidate>
+      <form id="peliculaForm" action="accion/TP2/ej4/formAccion.php" method="post" novalidate>
         <!-- Título y actores -->
         <div class="row mb-3">
           <div class="col-md-6">
@@ -52,6 +52,7 @@
             <label class="form-label">Género</label>
             <select name="genero" class="form-select" required>
               <option value="">Seleccione...</option>
+              <option>Acción</option>
               <option>Comedia</option>
               <option>Drama</option>
               <option>Terror</option>

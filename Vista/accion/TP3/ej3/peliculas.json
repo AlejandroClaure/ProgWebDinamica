@@ -5,12 +5,12 @@
         "director": "Quetin Tarantino",
         "guion": "Quetin Tarantino",
         "produccion": "Miramax films \/ A Band A Part",
-        "anio": "2003",
+        "anio": "1998",
         "nacionalidad": "Estados Unidos",
         "genero": "Acci\u00f3n",
-        "duracion": "110",
+        "duracion": "120",
         "restriccion": "Mayores de 18 a\u00f1os",
-        "sinopsis": "peli kill bill",
+        "sinopsis": "asdf",
         "imagen": "killbill.jpeg"
     },
     {
@@ -19,12 +19,13 @@
         "director": "Quetin Tarantino",
         "guion": "Quetin Tarantino",
         "produccion": "Miramax films \/ A Band A Part",
-        "anio": 1998,
+        "anio": "1998",
         "nacionalidad": "Estados Unidos",
-        "genero": "Drama",
-        "duracion": 110,
+        "genero": "Acci\u00f3n",
+        "duracion": "120",
         "restriccion": "Mayores de 18 a\u00f1os",
-        "sinopsis": "asdf"
+        "sinopsis": "asdf",
+        "imagen": "killbill.jpeg"
     },
     {
         "titulo": "Kill Bill: volumen 1",
@@ -32,12 +33,13 @@
         "director": "Quetin Tarantino",
         "guion": "Quetin Tarantino",
         "produccion": "Miramax films \/ A Band A Part",
-        "anio": 1998,
+        "anio": "1998",
         "nacionalidad": "Estados Unidos",
-        "genero": "Drama",
-        "duracion": 110,
+        "genero": "Acci\u00f3n",
+        "duracion": "120",
         "restriccion": "Mayores de 18 a\u00f1os",
-        "sinopsis": "asdf"
+        "sinopsis": "asdf",
+        "imagen": "killbill.jpeg"
     },
     {
         "titulo": "Kill Bill: volumen 1",
@@ -45,11 +47,12 @@
         "director": "Quetin Tarantino",
         "guion": "Quetin Tarantino",
         "produccion": "Miramax films \/ A Band A Part",
-        "anio": 1998,
+        "anio": "1998",
         "nacionalidad": "Estados Unidos",
-        "genero": "Comedia",
-        "duracion": 120,
+        "genero": "Acci\u00f3n",
+        "duracion": "120",
         "restriccion": "Mayores de 18 a\u00f1os",
-        "sinopsis": "asdsad"
+        "sinopsis": "asdasd",
+        "imagen": "killbill.jpeg"
     }
 ]

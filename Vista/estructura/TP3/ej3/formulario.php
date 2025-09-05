@@ -9,7 +9,7 @@
     <!-- El formulario ahora permite subir archivos con enctype -->
     <form
       id="peliculaForm"
-      action="../../../accion/TP3/ej3/accionForm.php"
+      action="accion/TP3/ej3/accionForm.php"
       method="post"
       enctype="multipart/form-data"
     >
