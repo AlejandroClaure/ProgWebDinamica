@@ -13,7 +13,7 @@ Cyntia, Nasabun;
 Recordar que para abrir el documento en xampp, el proyecto debe estar alojado dentro de htdocs de la siguiente manera:
 C:\xampp\htdocs\ProgWebDinamica
 
-Si no funciona, PREGUNTAR Y CONTACTARSE.
+Soporte técnico (24 hs):
 Discord: ale.c1
 
 Algunas referencias de código para los ejercicios:
