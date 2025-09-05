@@ -5,12 +5,12 @@
     <h3 class="text-center mb-4">Member Login</h3>
     <form id="loginForm" action="accion/TP2/ej3/formAccion.php" method="POST">
       <div class="mb-3">
-        <label class="form-label">Usuario</label>
-        <input type="text" name="usuario" id="usuario" class="form-control" required>
+        <label class="form-label">Username</label>
+        <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Username"required>
       </div>
       <div class="mb-3">
-        <label class="form-label">Contraseña</label>
-        <input type="password" name="clave" id="clave" class="form-control" required>
+        <label class="form-label">Password</label>
+        <input type="password" name="clave" id="clave" class="form-control" placeholder="Password" required>
       </div>
       <button type="submit" class="btn btn-success w-100">Login</button>
     </form>

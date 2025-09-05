@@ -2,7 +2,7 @@
 require_once("../../../../Control/TP3/ej3/PeliculasController.php");
 
 //rutas necesarias
-$jsonFile = __DIR__ . "/peliculas.json";        // crea el JSON en la misma carpeta
+$jsonFile = __DIR__ . "/../../../../peliculas.json";        // crea el JSON en la misma carpeta
 $uploadDir = __DIR__ . "/../../../../uploads/"; // carpeta para imágenes
 
 $controller = new PeliculasController($jsonFile, $uploadDir);
