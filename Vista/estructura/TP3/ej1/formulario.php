@@ -10,6 +10,7 @@
       <input type="file" name="archivo" class="form-control" required>
     </div>
     <button type="submit" class="btn btn-success">Subir</button>
+    <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio</a>
   </form>
 </div>
 

@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Deportes
-require_once("../../../../Control/TP1/ej6/Deportes.php");
+require_once("../../../../Control/TP1/ej6/DeportesController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";

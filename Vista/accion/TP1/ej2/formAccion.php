@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Horas desde la carpeta Control
-require_once("../../../../Control/TP1/ej2/Horas.php");
+require_once("../../../../Control/TP1/ej2/HorasController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";

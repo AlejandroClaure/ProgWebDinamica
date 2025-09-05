@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Entradas
-require_once("../../../../Control/TP1/ej8/Entradas.php");
+require_once("../../../../Control/TP1/ej8/EntradasController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";

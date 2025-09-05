@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Estudiante
-require_once("../../../../Control/TP1/ej5/Estudiante.php");
+require_once("../../../../Control/TP1/ej5/EstudianteController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";

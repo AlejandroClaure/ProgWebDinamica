@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Numero
-require_once("../../../../Control/TP1/ej1/Numero.php");
+require_once("../../../../Control/TP1/ej1/NumeroController.php");
 
 // Variable donde almacenaremos el mensaje final
 $resultado = "";

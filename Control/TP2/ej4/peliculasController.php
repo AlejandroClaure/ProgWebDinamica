@@ -1,17 +1,45 @@
 <?php
+/**
+ * Clase PeliculasController
+ * 
+ * Controla el guardado de películas en un archivo JSON.
+ */
 class PeliculasController {
+    /**
+     * @var string Ruta del archivo JSON donde se guardan las películas
+     */
     private $file;
 
+    /**
+     * Constructor de la clase.
+     * Crea el archivo JSON si no existe.
+     */
     public function __construct() {
-        // Archivo JSON en /uploads
         $this->file = __DIR__ . "/../../../uploads/peliculas.json";
 
-        // Si no existe, lo creamos vacío
         if (!file_exists($this->file)) {
             file_put_contents($this->file, json_encode([]));
         }
     }
 
+    /**
+     * Guarda una película en el archivo JSON.
+     *
+     * @param array $data Datos de la película:
+     *                    - 'titulo' string
+     *                    - 'actores' string
+     *                    - 'director' string
+     *                    - 'guion' string
+     *                    - 'produccion' string
+     *                    - 'anio' int
+     *                    - 'nacionalidad' string
+     *                    - 'genero' string
+     *                    - 'duracion' int
+     *                    - 'restriccion' string
+     *                    - 'sinopsis' string
+     * 
+     * @return string HTML con mensaje de éxito o error
+     */
     public function guardar($data) {
         // Sanitizar para evitar XSS
         $pelicula = [
@@ -28,16 +56,18 @@ class PeliculasController {
             "sinopsis"     => htmlspecialchars($data['sinopsis'] ?? '')
         ];
 
-        // Leer JSON existente
+        // Leer contenido JSON existente
         $contenido = json_decode(file_get_contents($this->file), true);
 
-        // Agregar película
+        // Agregar película al contenido
         $contenido[] = $pelicula;
 
-        // Guardar nuevamente
+        // Variable acumuladora para el resultado
+        $resultado = "";
+
+        // Guardar nuevamente en el archivo
         if (file_put_contents($this->file, json_encode($contenido, JSON_PRETTY_PRINT))) {
-            // Mostrar confirmación con los datos
-            return "
+            $resultado = "
             <div class='alert alert-success'>
               <h3 class='text-primary'>La película introducida es:</h3>
               <ul>
@@ -55,7 +85,9 @@ class PeliculasController {
               </ul>
             </div>";
         } else {
-            return "<div class='alert alert-danger'>Error al guardar la película en JSON.</div>";
+            $resultado = "<div class='alert alert-danger'>Error al guardar la película en JSON.</div>";
         }
+
+        return $resultado;
     }
 }

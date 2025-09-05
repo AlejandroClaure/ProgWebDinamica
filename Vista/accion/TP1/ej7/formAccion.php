@@ -1,6 +1,6 @@
 <?php
 // Incluimos la clase Calculadora
-require_once("../../../../Control/TP1/ej7/Calculadora.php");
+require_once("../../../../Control/TP1/ej7/CalculadoraController.php");
 
 // Variable donde guardaremos el mensaje final
 $resultado = "";

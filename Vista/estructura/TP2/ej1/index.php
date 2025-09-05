@@ -1,7 +1,7 @@
 <?php include("../../header.php"); ?>
 
 <div class="container mt-4">
-  <h2>Ejercicio 2 - Validación de formularios con librerías JavaScript</h2>
+  <h2>Ejercicio 1 - Validación de formularios con librerías JavaScript</h2>
   
   <p>
     En este ejercicio se investiga y prueba la validación de formularios utilizando alguna 

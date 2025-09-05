@@ -11,10 +11,10 @@
   <button type="submit" class="btn btn-primary w-100">Enviar</button>
 </form>
 
-<!-- Botón para volver al índice TP1 -->
-<div class="mt-3 text-center">
-  <a href="../../index.php" class="btn btn-secondary">Volver al inicio TP1</a>
-</div>
+  <!-- Botón para volver al menú TP2 -->
+  <div class="mt-3 text-center">
+    <a href="estructura/TP2/ej2/index.php" class="btn btn-secondary">Volver Submenu TP2</a>
+  </div>
 
 <?php include("../../../../footer.php"); ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
