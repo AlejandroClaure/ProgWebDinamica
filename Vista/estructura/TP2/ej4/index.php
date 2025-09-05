@@ -103,6 +103,13 @@
     </div>
   </div>
 
+
+
+<!-- Botón para volver al inicio -->
+<div class="mt-3 text-center">
+  <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio.</a>
+</div>
+
   <!-- jQuery y validate -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>

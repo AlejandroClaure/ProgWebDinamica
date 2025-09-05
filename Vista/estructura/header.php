@@ -44,6 +44,7 @@
               <li><a class="dropdown-item" href="estructura/TP2/ej1/index.php">Ejercicio 1</a></li>
               <li><a class="dropdown-item" href="estructura/TP2/ej2/index.php">Ejercicio 2</a></li>
               <li><a class="dropdown-item" href="estructura/TP2/ej3/index.php">Ejercicio 3</a></li>
+              <li><a class="dropdown-item" href="estructura/TP2/ej4/index.php">Ejercicio 4</a></li>
             </ul>
           </li>
           <!-- Dropdown TP3 -->

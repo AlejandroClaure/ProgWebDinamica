@@ -28,9 +28,9 @@
     <button type="submit" class="btn btn-primary w-100">Calcular</button>
   </form>
 
-  <!-- Botón para volver al índice TP1 -->
+  <!-- Botón para volver al inicio -->
   <div class="mt-3 text-center">
-    <a href="estructura/TP1/index.php" class="btn btn-secondary">Volver al inicio TP1</a>
+    <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio.</a>
   </div>
 </div>
 

@@ -17,6 +17,11 @@
   </div>
 </div>
 
+<!-- Botón para volver al inicio -->
+<div class="mt-3 text-center">
+  <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio.</a>
+</div>
+
 <?php include("../../../estructura/footer.php"); ?>
 
 <!-- Estilos y scripts -->
