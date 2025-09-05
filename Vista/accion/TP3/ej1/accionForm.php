@@ -5,8 +5,8 @@ require_once("../../../../Control/TP3/ej1/ArchivoController.php");
 $controller = new ArchivoController();
 $resultado = $controller->guardar($_POST, $_FILES);
 
-// Incluir header y footer para mantener la estructura
-include("../../header.php");
+// Incluir header con <base>
+include("../../../estructura/header.php");
 ?>
 
 <div class="container text-center mt-5">
@@ -14,8 +14,9 @@ include("../../header.php");
   <?= $resultado ?>
 
   <div class="mt-3">
-    <a href="/estructura/TP3/ej1/formulario.php" class="btn btn-secondary">Volver</a>
+    
+    <a href="estructura/TP3/ej1/formulario.php" class="btn btn-secondary">Volver</a>
   </div>
 </div>
 
-<?php include("../../footer.php"); ?>
+<?php include("../../../estructura/footer.php"); ?>

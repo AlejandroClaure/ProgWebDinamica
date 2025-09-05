@@ -1,11 +1,13 @@
 <?php
-class ArchivoController {
+class ArchivoController
+{
 
     private $uploadDir;
 
-    public function __construct() {
+    public function __construct()
+    {
         // Carpeta absoluta donde se guardarán los archivos
-        $this->uploadDir = __DIR__ . "/../../../../uploads/";
+        $this->uploadDir = __DIR__ . "/../../../../uploads/TP3/ej1/";
 
         // Verificar si existe la carpeta; si no, crearla
         if (!is_dir($this->uploadDir)) {
@@ -21,7 +23,8 @@ class ArchivoController {
      * @param array $files Datos $_FILES del formulario
      * @return string Mensaje de resultado
      */
-    public function guardar($post, $files) {
+    public function guardar($post, $files)
+    {
         $archivo = $files['archivo'] ?? null;
 
         if (!$archivo) {
@@ -44,17 +47,16 @@ class ArchivoController {
 
         // Intentar mover el archivo
         if (move_uploaded_file($archivo['tmp_name'], $rutaDestino)) {
-            // URL relativa para mostrar al usuario
-            $urlArchivo = "/uploads/$nombreArchivo";
+            // URL relativa al <base> definido en el header
+            $urlArchivo = "uploads/TP3/ej1/$nombreArchivo";
             return "<div class='alert alert-success'>
-                        Carpeta de uploads verificada correctamente.<br>
-                        Archivo subido correctamente: 
-                        <a href='$urlArchivo' target='_blank'>$nombreArchivo</a>
-                        <br>Ruta completa: $rutaDestino
-                    </div>";
+                Carpeta de uploads verificada correctamente.<br>
+                Archivo subido correctamente: 
+                <a href='$urlArchivo' target='_blank'>$nombreArchivo</a>
+                <br>Ruta completa: $rutaDestino
+            </div>";
         } else {
             return "<div class='alert alert-danger'>Error al guardar el archivo.</div>";
         }
     }
 }
-?>
