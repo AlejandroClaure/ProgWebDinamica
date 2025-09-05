@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php include("../../../estructura/header.php"); ?>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Ejercicio 4 - Carga de Películas</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../../css/Tp2/ej4/estilosPeliculas.css" rel="stylesheet" />
-</head>
-
-<body class="container mt-4">
+<div class="container mt-4">
   <div class="card shadow-lg">
     <div class="card-body">
       <h2 class="mb-4 text-primary">🎬 Cinem@</h2>
@@ -103,16 +95,15 @@
     </div>
   </div>
 
-
-
-<!-- Botón para volver al inicio -->
-<div class="mt-3 text-center">
-  <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio.</a>
+  <!-- Botón para volver al inicio -->
+  <div class="mt-3 text-center">
+    <a href="estructura/index.php" class="btn btn-secondary">Volver al inicio</a>
+  </div>
 </div>
 
-  <!-- jQuery y validate -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
-  <script src="../../js/Tp2/ej4/validacionPeliculas.js"></script>
-</body>
-</html>
+<?php include("../../../estructura/footer.php"); ?>
+
+<!-- Scripts de validación -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.19.5/jquery.validate.min.js"></script>
+<script src="../../js/Tp2/ej4/validacionPeliculas.js"></script>
